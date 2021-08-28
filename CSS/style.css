@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Cinzel:wght@400;500;600&family=Courgette&family=Yellowtail&family=Hina+Mincho&family=Dancing+Script:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: rgb(36, 35, 35);
+}
+a{
+    text-decoration: none;
+    /* color: white; */
+}
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+p{
+    color: rgb(150, 146, 146);
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.section{
+    width: 85%;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+}
+.row{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+.bottom-line::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.bottom-line:hover{
+    width: 100%;
+}
+
+
+/* Start Header Section */
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+header p{
+    color: white;
+}
+.header{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+.header .ipsc{
+    width: 100px;
+    margin-right: 10px;
+}
+.header .mujib{
+    width: 126px;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+.header-top .sign-in{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+header a{
+    color: white;
+}
+.header .text-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    color: rgb(235, 240, 240);
+}
+.header .text-box h1{
+    margin-bottom: 15px;
+    font-family: 'Merriweather', serif;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../Images/learning-3245793_960_720.webp) no-repeat center /cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.7;
+}
+header .fas{
+    color: white;
+}
+/* End Header Section */
+
+/* Start Scrool-notice Section */
+.scrool-notice{
+    background: #1e272e;
+    color: white;
+    padding: 15px 0;
+}
+/* End Scrool-notice Section */
+
+/* Start Outhority Section */
+
+.outhority-col{
+    flex-basis: 31%;
+    background: linear-gradient(rgb(163, 118, 118), black);
+    border-radius: 10px;
+    /* margin-bottom: 5%; */
+    padding: 25px 12px;
+    transition: 0.5s;
+}
+.outhority-col:hover{
+    box-shadow: 4px 4px rgba(26, 8, 8, 0.7);
+    transform: translate(-4px, -4px);
+}
+.outhority-col img{
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 0px 10px;
+}
+.outhority-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: 'Yellowtail', cursive;
+    letter-spacing: 2px;
+    color: white;
+}
+.outhority h1{
+    margin-bottom: -10px;
+}
+.outhority-col .fas{
+    color: blue;
+    font-size: 0.9rem;
+}
+.outhority-col a{
+    font-size: 0.9rem;
+}
+
+/* End Outhority Section */
+
+/* Start Glance Section */
+.glance h3{
+    color: white;
+}
+.glance-col{
+    flex-basis: 24%;
+    background: linear-gradient(rgb(99, 46, 57), rgb(14, 1, 4));
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s ease-in-out;
+}
+.glance-col:hover{
+    transform: scale(1.05);
+}
+.glance-col img{
+    margin-top: 10px;
+    width: 200px;
+    height: 130px;
+}
+.glance-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.glance h1{
+    margin-bottom: -10px;
+}
+.glance-col .fas{
+    color: blue;
+    font-size: 0.9rem;
+}
+.glance-col a{
+    font-size: 0.9rem;
+}
+/* End Glance Section */
+
+/* Start Spotlight Section */
+.spotlight{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+.spotlight h3{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+.highlight{
+    flex-basis: 69%;
+    border-radius: 0 15px;
+    background: linear-gradient(rgb(24, 78, 62), rgb(6, 6, 29));
+}
+.highlight-item{
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    background: url(../Images/IMG_9591.JPG) no-repeat center / cover;
+    box-shadow: 0 0 20px 0 rgba(214, 179, 179, 0.6);
+    animation: slider 20s infinite linear;
+    margin-bottom: 20px;
+}
+.notice-board{
+    flex-basis: 28%;
+    border-radius: 15px 0;
+    background: linear-gradient(#3f0f17, #180513);
+}
+.notice-board h3{
+    padding-bottom: 5px;
+    margin: 12px 0;
+    border-bottom: 1px solid rgb(206, 20, 20);
+    font-family: 'Hina Mincho', serif;
+}
+.notice-item{
+    text-align: left;
+}
+.notice-item ul{
+    list-style: none;
+}
+.notice-item li{
+    border: 1px solid rgb(194, 147, 147);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 7px 10px;
+    cursor: pointer;
+    color: white;
+    font-size: .9rem;
+}
+.notice-item ul li img{
+    float: right;
+    width: 32px;
+}
+.spotlight .highlight h3{
+    margin: 20px 0;
+}
+/* End Spotlight Section */
+
+/* Start Facilities Section */
+.facilities h1{
+    margin-bottom: -10px;
+}
+.facilities h3{
+    color: white;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    /* margin-bottom: 5%; */
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/* End Facilities Section */
+
+/* Start Testimonials Section */
+.testimonials h1{
+    margin-bottom: -10px;
+}
+.testimonials-col{
+    display: flex;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+}
+.testimonials-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonials-col p{
+    padding: 0;
+    color: rgb(43, 43, 43);
+}
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonials-col .fas{
+    color: #f44336;
+}
+/* End Testimonials Section */
+
+/* Start Footer Section  */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h3{
+    color: rgb(150, 146, 146);
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fab{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 25px;
+}
+.fa-heart{
+    color: #f44336;
+}
+/* End Footer Section  */
+
+
+
+
+
+
+
+
+@media(max-width: 750px){
+    .header-top{
+        display: flex;
+        flex-flow: column;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .header .ipsc{
+        width: 90px;
+        margin-right: 20px;
+    }
+    .header .mujib{
+        width: 116px;
+    }
+    .header h1{
+        font-size: 1.5rem;
+    }
+    .header .logo{
+        margin-bottom: 20px;
+    }
+    .header .text-box{
+        top: 65%;
+    }
+    header h3,
+    .header p{
+        font-size: 1rem;
+    }
+    .row{
+        flex-flow: column;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .outhority-col{
+        flex-basis: 31%;
+        margin-top: 15px;
+    }
+    .spotlight{
+        flex-flow: column;
+    }
+    .outhority-col{
+        margin-bottom: 5%;
+    }
+    .facilities-col{
+        margin-bottom: 15%;
+    }
+    .highlight{
+        margin-bottom: 5%;
+    }
+}
+
+
+@media(max-width: 300px){
+    header h3,
+    .header p{
+        font-size: 0.8rem;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    .header .text-box{
+        top: 55%;
+        width: 90%;
+    }
+    .header .ipsc{
+        width: 66px;
+        margin-right: 15px;
+    }
+    .header .mujib{
+        width: 90px;
+    }
+    .outhority-col img{
+        width: 120px;
+    }
+}
+
+@keyframes slider {
+    0%{
+        background: url(../Images/IMG_9591.JPG) no-repeat center / cover;
+    }
+
+    25%{
+        background: url(../Images/IMG_9520\ 2.jpg) no-repeat center / cover;
+    }
+
+    50%{
+        background: url(../Images/IMG_9488\ 2.jpg) no-repeat center / cover;
+    }
+    
+    75%{
+        background: url(../Images/IMG_9214.JPG) no-repeat center / cover;
+    }
+}
